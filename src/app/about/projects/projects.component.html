@@ -77,12 +77,12 @@
   </div>
   <nav class="page">
     <ul class="pagination justify-content-center">
-      <li class="page-item" [ngClass]="{'disabled': currentPage=='1'}">
+      <li class="page-item" [ngClass]="{'disabled': currentPage==1}">
         <a class="page-link"  tabindex="-1" (click)="checkPage('prev')">Previous</a>
       </li>
       <li class="page-item"><a class="page-link"  tabindex="-1" (click)="checkPage('1')">1</a></li>
       <li class="page-item"><a class="page-link"  tabindex="-1"(click)="checkPage('2')">2</a></li>
-      <li class="page-item" [ngClass]="{'disabled': currentPage=='2'}">
+      <li class="page-item" [ngClass]="{'disabled': currentPage==2}">
         <a class="page-link" tabindex="-1" (click)="checkPage('next')">Next</a>
       </li>
     </ul>
