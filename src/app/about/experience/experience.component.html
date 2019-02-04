@@ -1,0 +1,65 @@
+<div class="experience">
+  <table>
+    <br>
+    <div *ngIf="currentPage == 1">
+      <b class="dates">July’18 – Dec’18</b> 
+      <tr>
+        <td>
+            <b>Software Developer Intern</b>, Health Catalyst, Salt Lake City, Utah
+        </td>
+      </tr>
+      <tr>
+          <td>
+            <ul>
+              <li>Developed Enterprise Data Warehousing software using ASP.NET Web API with Angular 5 based client side</li>
+              <li>Used Entity framework (ORM framework) to perform CRUD operations on the database</li>
+              <li>Wrote unit test cases using Jasmine and xUnit testing framework and maintained the code coverage over 88%</li>
+              <li>Used OData to make calls to the backend APIs</li>
+              <li>Reviewed colleague's pull requests and highlighted any discrepancies and brought it to their attention</li>
+              <li>Contributed in creating wireframes using Adobe XD that aided user centered design</li>
+              <li>Collaborated with peers to improve UX/UI and created new user stories from ground up</li>
+              <li>Signed off every user story after Smoke/Ad hoc testing and fixing the bugs found</li>
+              <li>Deployed databases and web apps on Azure and performed regression testing to find critical bugs before the product release</li>
+              <li>Contributed in all phases of SDLC which involves project planning, requirement analysis, design, development and end to end feature testing</li>
+            </ul>
+          </td>
+        </tr>
+      </div>
+
+      <div *ngIf="currentPage == 2">
+          <b class="dates">Oct’14 – Jun’16</b> 
+          <tr>
+            <td>
+                <b>Software/Systems Engineer</b>, Infosys Limited, India
+            </td>
+          </tr>
+          <tr>
+              <td>
+                <ul>
+                  <li>Migrated IBM Lotus Notes (LN) applications to .NET applications (Provider hosted and SharePoint hosted applications)</li>
+                  <li>Analyzed the LN applications and lotus scripts and developed Functional Requirement Specification (FRS) documents which included execution workflow with the new SharePoint application look and feel</li>
+                  <li>Improved the project efficiency by directly communicating with the clients and facilitating the requirement phase</li>
+                  <li>Developed Visual web parts and Application pages using Visual Studio 2010</li>
+                  <li>Used CAML and LINQ queries to retrieve and customize data from the SQL, and displayed it using web parts</li>
+                  <li>Created various OOTB web parts including Data View web parts and Custom web parts</li>
+                  <li>Customized the look and feel of the SharePoint pages and Master pages using Html, Css, JavaScript and JQuery</li>
+                  <li>Created test cases and performed Functional/black box testing for applications created by other team members</li>
+                </ul>
+              </td>
+            </tr>
+          </div>
+
+      <nav class="dates">
+        <ul class="pagination justify-content-center">
+          <li class="page-item" [ngClass]="{'disabled': currentPage=='1'}">
+            <a class="page-link"  tabindex="-1" (click)="checkPage('prev')">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link"  tabindex="-1" (click)="checkPage('1')">1</a></li>
+          <li class="page-item"><a class="page-link"  tabindex="-1"(click)="checkPage('2')">2</a></li>
+          <li class="page-item" [ngClass]="{'disabled': currentPage=='2'}">
+            <a class="page-link" tabindex="-1" (click)="checkPage('next')">Next</a>
+          </li>
+        </ul>
+      </nav>
+  </table>
+</div>

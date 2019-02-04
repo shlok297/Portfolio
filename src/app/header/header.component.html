@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#" title={{homeLabel}}>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark header">
+    <a class="navbar-brand" routerLink="home" title={{homeLabel}}>
         <i class="fa fa-home icon"></i>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,16 +9,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#">{{aboutMeLabel}}</a>
+                <a class="nav-link" routerLinkActive="active" routerLink="/about">{{aboutMeLabel}}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">{{resumeLabel}}</a>
+                <a class="nav-link" routerLinkActive="active" routerLink="/resume">{{resumeLabel}}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">{{portfolioLabel}}</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">{{contactLabel}}</a>
+                <a class="nav-link" routerLinkActive="active" routerLink="/contact">{{contactLabel}}</a>
             </li>
         </ul>
     </div>

@@ -1,0 +1,49 @@
+<div class="about">
+    <div class="card image">
+        <div class="card-body">
+          <div class="image-data">
+            <div class="display-picture">
+              <img src="../../assets/DP.jpg" alt="Shlok Patel">
+            </div>
+            <br>
+            <br>
+            <div class="overview">
+              <h5 class="title-overview">Overview</h5>
+              <ul>
+                <li>2+ years of professional experience as a Software Engineer (.NET C# and Angular2+)</li>
+                <li>Skilled in all Software Development Life Cycle (SDLC) stages using Agile (SCRUM) methodology</li>
+                <li>Organized, result driven and excellent communicator with active listening skills</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+  <div class="card links">
+    <div class="card-body">
+        <h5 class="card-title">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="showExperience()" routerLink="/about/">Work Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLinkActive="active" routerLink="/about/skills" (click)="hideExperience()">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" routerLink="/about/education" (click)="hideExperience()">Education</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLinkActive="active" routerLink="/about/projects" (click)="hideExperience()">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" routerLink="/about/activities" (click)="hideExperience()">Extracurricular</a>
+              </li>
+          </ul>
+        </h5>
+        <div class="text-data">
+          <div *ngIf="isExperienceTab">
+            <app-experience></app-experience>
+          </div>
+          <router-outlet></router-outlet>
+        </div>
+  </div>
+</div>

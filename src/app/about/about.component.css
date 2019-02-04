@@ -1,0 +1,45 @@
+.about {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.image {
+    width: 30%;
+    float: left;
+    height: 90vh;
+    background: #dfe6e9;
+}
+
+.links {
+    width: 70%;
+    float: right;
+}
+
+img {
+    max-width: 60%;
+    max-height: 60%;
+    border-radius: 2px;
+}
+
+.display-picture {
+    text-align: center;
+}
+
+.title-overview {
+    text-align: center;
+}
+
+.card-body {
+    background: #dfe6e9;
+    height: 90vh;
+}
+
+.nav-tabs .nav-link {
+    border: 0px solid transparent;
+    color: #41464a;
+}
+
+.nav-tabs .nav-link.active {
+    color: #ffff !important;
+    background-color: #41464a; 
+}

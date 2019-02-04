@@ -8,7 +8,5 @@ import { InputLabels, CustomText } from 'src/constants';
 })
 
 export class AppComponent {
-    public nameText: string = CustomText.Name;
-    public occupationText: string = CustomText.Occupation;
-    title = 'portfolio';
+
 }

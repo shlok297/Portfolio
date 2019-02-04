@@ -1,0 +1,8 @@
+.dates {
+    float: right;
+}
+
+table {
+    display: block;
+    min-width: 100%;
+}

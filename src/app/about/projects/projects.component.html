@@ -1,0 +1,92 @@
+<div class="projects">
+<table>
+  <br>
+  <div *ngIf="currentPage == 1">
+    <tr>
+      <td class="title">
+        Twitter spam-bot detection (Machine learning)
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>Extracted important features from the provided semi-structured twitter dataset</li>
+          <li>Computed most effective and accurate machine learning algorithm after implementing Decision Tree, Support Vector Machine, Perceptron (Simple, Averaged, Decreasing Learning Rate), Logistic Regression, Naïve Bayes and Bagged Forest</li>
+          <li>Maximized accuracy of the test dataset by performing cross-validation by applying different sets of hyper-parameters </li>
+          <li>Achieved an average accuracy of 87% and best of 89.8% using the Bagged Forest algorithm</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="title">
+          Consumer complaints for banking system (Visualization - ES2015 and D3.js)
+      </td>
+    </tr>
+    <tr>
+        <td>
+          <ul>
+            <li>Designed and built flexible, innovative website using D3.js and JavaScript technologies</li>
+            <li>Determined the action items from the semi-structured dataset (.csv and JSON) and brainstormed website components</li>
+            <li>Created interactive line chart with zoom-able brush selection, map, zoom-able sunburst, bar charts and table</li>
+            <li>Improved the interactivity and usability of the website by implementing filter functionality to filter unwanted data</li>
+          </ul>
+        </td>
+    </tr>
+    <tr>
+      <td class="title">
+        Movie rental portal (ASP.NET Core and Angular 5)
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>Created a movie rental page using Angular2+ and ASP.NET framework</li>
+          <li>Made the application dynamic across environments by creating entity framework code first migrations</li>
+          <li>Designed APIs to perform CRUD operations on movies and customer tables</li>
+          <li>Integrated 3rd party API to find the IMDB rating of the movies</li>
+        </ul>
+      </td>
+    </tr>
+  </div>
+  <div *ngIf="currentPage == 2">
+    <tr>
+      <td class="title">Budget Keeper WebApp</td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>Designed a web application which keeps track of the Income and Expenses made and also shows the percentage of money spend on expenses</li>
+          <li>Technologies used JavaScript, HTML5 and CSS3</li>
+          <li>https://shlok297.github.io/Budget-Keeper-App/</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="title">
+        FIFA World Cup 2014 Analysis
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>Created a playoff bracket design which shows winner as the parent node of the competitors as the child nodes</li>
+          <li>Designed a score table which showed the overall performance(goals made and conceded, number of games won, lost, and played, and results) of the each team as well as on expanding shows statistics of each of their games with sorting functionality</li>
+        </ul>
+      </td>
+    </tr>
+  </div>
+  <nav class="page">
+    <ul class="pagination justify-content-center">
+      <li class="page-item" [ngClass]="{'disabled': currentPage=='1'}">
+        <a class="page-link"  tabindex="-1" (click)="checkPage('prev')">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link"  tabindex="-1" (click)="checkPage('1')">1</a></li>
+      <li class="page-item"><a class="page-link"  tabindex="-1"(click)="checkPage('2')">2</a></li>
+      <li class="page-item" [ngClass]="{'disabled': currentPage=='2'}">
+        <a class="page-link" tabindex="-1" (click)="checkPage('next')">Next</a>
+      </li>
+    </ul>
+  </nav>
+</table>
+</div>
+

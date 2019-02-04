@@ -1,3 +1,10 @@
 .icon {
     font-size: xx-large;
 }
+
+.header {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
